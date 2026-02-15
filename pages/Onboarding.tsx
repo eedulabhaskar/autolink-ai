@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from 'react';
-import { useNavigate } from 'next/navigation';
+import { useNavigate } from 'next/router';
 import { Upload, Briefcase, Linkedin, Calendar, CheckCircle2, ChevronRight, ChevronLeft, Loader2, FileText, AlertCircle, Clock, Zap, ShieldCheck, Plus, X } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';

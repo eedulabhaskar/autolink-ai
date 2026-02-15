@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'next/navigation';
+import { useNavigate } from 'next/router';
 import { Layout } from '../components/Layout';
 import { Card } from '../components/ui/Card';
 import { Clock, CheckCircle, RefreshCw, FileText, Loader2, ArrowRight, Play, Square, Power } from 'lucide-react';

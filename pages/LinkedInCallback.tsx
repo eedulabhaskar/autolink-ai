@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useSearchParams } from 'next/navigation';
+import { useNavigate, useSearchParams } from 'next/router';
 import { Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { startAgent } from '../lib/api';

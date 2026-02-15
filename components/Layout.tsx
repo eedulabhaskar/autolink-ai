@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { NavLink, useLocation, useNavigate } from 'next/navigate';
+import { NavLink, useLocation, useNavigate } from 'next/router';
 import { LayoutDashboard, Calendar, Settings, LogOut, Bot, ClipboardList } from 'lucide-react';
 import { Button } from './ui/Button';
 import { getStoredUser } from '../lib/store';

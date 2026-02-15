@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams } from 'next/router';
 import { Bot, CreditCard, Lock, ShieldCheck, Check, ChevronLeft, Loader2, AlertCircle } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';

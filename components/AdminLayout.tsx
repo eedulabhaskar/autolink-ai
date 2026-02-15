@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { NavLink, useNavigate } from 'next/navigate';
+import { NavLink, useNavigate } from 'next/router';
 import { LayoutDashboard, Users, CreditCard, Activity, LogOut, Shield } from 'lucide-react';
 import { Button } from './ui/Button';
 

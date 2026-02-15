@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from 'react';
-import { useNavigate } from 'next/Navigation';
+import { useNavigate } from 'next/router';
 import { Check, Bot, Zap, TrendingUp, Shield } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { PLANS } from '../constants';

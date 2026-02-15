@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useNavigate, useLocation } from 'next/navigate';
+import { useNavigate, useLocation } from 'next/router';
 import { Home, LayoutDashboard, Shield } from 'lucide-react';
 
   const DevNavigation: React.FC = () => {
