@@ -29,7 +29,7 @@ export const parseResume = async (resumeText: string) => {
       }
     }
   });
-  return JSON.parse(response.text);
+  return JSON.parse(response.text ?? "{}");
 };
 
 export const generateLinkedInPost = async (userData: {
