@@ -5,12 +5,12 @@ import  LandingPage  from './pages/LandingPage';
 import  Onboarding  from './pages/Onboarding';
 import  UserDashboard  from './pages/UserDashboard';
 import  AdminDashboard  from './pages/AdminDashboard';
-import  SchedulePage  from './pages/SchedulePage';
-import  ActivityLogPage  from './pages/ActivityLogPage';
-import  SettingsPage  from './pages/SettingsPage';
-import  CheckoutPage  from './pages/CheckoutPage';
-import  LinkedInCallback  from './pages/LinkedInCallback';
-import  DevNavigation  from './components/DevNavigation';
+import { SchedulePage } from './pages/SchedulePage';
+import { ActivityLogPage } from './pages/ActivityLogPage';
+import { SettingsPage } from './pages/SettingsPage';
+import { CheckoutPage } from './pages/CheckoutPage';
+import { LinkedInCallback } from './pages/LinkedInCallback';
+import { DevNavigation } from './components/DevNavigation';
 
 function App() {
   return (
