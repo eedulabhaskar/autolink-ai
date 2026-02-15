@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'next/navigate';
 import { Home, LayoutDashboard, Shield } from 'lucide-react';
 
   const DevNavigation: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const location = useLocation();
 
   const navs = [

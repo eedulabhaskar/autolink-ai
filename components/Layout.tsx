@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'next/navigate';
 import { LayoutDashboard, Calendar, Settings, LogOut, Bot, ClipboardList } from 'lucide-react';
 import { Button } from './ui/Button';
 import { getStoredUser } from '../lib/store';
@@ -11,7 +11,7 @@ interface LayoutProps {
 }
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const user = getStoredUser();
   
   const navItems = [

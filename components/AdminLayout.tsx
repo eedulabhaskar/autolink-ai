@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'next/navigate';
 import { LayoutDashboard, Users, CreditCard, Activity, LogOut, Shield } from 'lucide-react';
 import { Button } from './ui/Button';
 
@@ -9,7 +9,7 @@ interface AdminLayoutProps {
 }
 
 export const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
-  const navigate = useNavigate();
+  const router = useRouter();
   
   const navItems = [
     { icon: LayoutDashboard, label: 'Overview', path: '/admin/dashboard' },
