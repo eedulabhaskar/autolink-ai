@@ -15,7 +15,7 @@ interface APIPost {
   created_at: string;
 }
 
-export const ActivityLogPage: React.FC = () => {
+  const ActivityLogPage: React.FC = () => {
   const [posts, setPosts] = useState<APIPost[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -152,3 +152,4 @@ export const ActivityLogPage: React.FC = () => {
     </Layout>
   );
 };
+export default ActivityLogPage;

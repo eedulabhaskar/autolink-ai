@@ -9,7 +9,7 @@ import { getStoredUser } from '../lib/store';
 import { getPosts, startAgent, stopAgent, getAgentStatus } from '../lib/api';
 import { PLANS } from '../constants';
 
-export const UserDashboard: React.FC = () => {
+  const UserDashboard: React.FC = () => {
   const navigate = useNavigate();
   const [jobs, setJobs] = useState<any[]>([]);
   const [user, setUser] = useState(getStoredUser());
@@ -208,3 +208,4 @@ export const UserDashboard: React.FC = () => {
     </Layout>
   );
 };
+export default UserDashboard;

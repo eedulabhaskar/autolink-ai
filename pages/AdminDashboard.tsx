@@ -330,7 +330,7 @@ const AgentLogsSection = () => (
 
 // --- MAIN DASHBOARD CONTROLLER ---
 
-export const AdminDashboard: React.FC = () => {
+  const AdminDashboard: React.FC = () => {
   // Using path detection to mimic routing behavior within this single component
   const [activeTab, setActiveTab] = useState<'overview' | 'users' | 'billing' | 'logs'>('overview');
 
@@ -381,3 +381,4 @@ export const AdminDashboard: React.FC = () => {
     </AdminLayout>
   );
 };
+export default AdminDashboard;

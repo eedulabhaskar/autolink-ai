@@ -5,7 +5,7 @@ import { Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { startAgent } from '../lib/api';
 
-export const LinkedInCallback: React.FC = () => {
+  const LinkedInCallback: React.FC = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const [status, setStatus] = useState<'processing' | 'success' | 'error'>('processing');
@@ -98,3 +98,4 @@ export const LinkedInCallback: React.FC = () => {
     </div>
   );
 };
+export default LinkedInCallback;

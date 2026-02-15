@@ -6,7 +6,7 @@ import { Button } from '../components/ui/Button';
 import { PLANS } from '../constants';
 import { saveUser, getStoredUser } from '../lib/store';
 
-export const LandingPage: React.FC = () => {
+  const LandingPage: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -142,3 +142,4 @@ export const LandingPage: React.FC = () => {
     </div>
   );
 };
+export default LandingPage;

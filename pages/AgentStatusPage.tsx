@@ -7,7 +7,7 @@ import { getStoredUser, saveUser } from '../lib/store';
 import { startAgent, stopAgent, getAgentStatus, AgentStatusResponse } from '../lib/api';
 import { User } from '../types';
 
-export const AgentStatusPage: React.FC = () => {
+  const AgentStatusPage: React.FC = () => {
   const [user, setUser] = useState<User>(getStoredUser());
   const [loading, setLoading] = useState(false);
   const [statusLoading, setStatusLoading] = useState(true);
@@ -214,3 +214,4 @@ export const AgentStatusPage: React.FC = () => {
     </Layout>
   );
 };
+export default AgentStatusPage;

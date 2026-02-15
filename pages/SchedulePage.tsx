@@ -11,7 +11,7 @@ import { ScheduleConfig } from '../types';
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const TIMES = ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'];
 
-export const SchedulePage: React.FC = () => {
+  const SchedulePage: React.FC = () => {
   const [schedule, setSchedule] = useState<ScheduleConfig[]>([]);
   const [loading, setLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
@@ -186,3 +186,4 @@ export const SchedulePage: React.FC = () => {
     </Layout>
   );
 };
+export default SchedulePage;

@@ -8,7 +8,7 @@ import { PLANS } from '../constants';
 import { createOrder } from '../lib/api';
 import { saveUser, getStoredUser } from '../lib/store';
 
-export const CheckoutPage: React.FC = () => {
+  const CheckoutPage: React.FC = () => {
   const { planId } = useParams<{ planId: string }>();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
@@ -217,3 +217,4 @@ export const CheckoutPage: React.FC = () => {
     </div>
   );
 };
+export default CheckoutPage;

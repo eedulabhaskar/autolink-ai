@@ -22,7 +22,7 @@ import { generateLinkedInAuthUrl } from '../lib/linkedin';
 import { User } from '../types';
 import { supabase } from '../lib/supabase';
 
-export const SettingsPage: React.FC = () => {
+  const SettingsPage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -228,3 +228,4 @@ export const SettingsPage: React.FC = () => {
     </Layout>
   );
 };
+export default SettingsPage;
