@@ -10,7 +10,7 @@ import  ActivityLogPage  from './pages/ActivityLogPage';
 import  SettingsPage  from './pages/SettingsPage';
 import  CheckoutPage  from './pages/CheckoutPage';
 import  LinkedInCallback  from './pages/LinkedInCallback';
-import  DevNavigation  from './components/DevNavigation';
+import  {DevNavigation} from './components/DevNavigation';
 
 function App() {
   return (
