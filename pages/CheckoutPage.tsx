@@ -1,6 +1,6 @@
-
+"use client";
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'next/navigation';
 import { Bot, CreditCard, Lock, ShieldCheck, Check, ChevronLeft, Loader2, AlertCircle } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
@@ -9,8 +9,8 @@ import { createOrder } from '../lib/api';
 import { saveUser, getStoredUser } from '../lib/store';
 
   const CheckoutPage: React.FC = () => {
-  const { planId } = useParams<{ planId: string }>();
-  const navigate = useNavigate();
+  const params=useParams();
+  const planId=params?.planId as string;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 

@@ -1,6 +1,6 @@
-
+"use client";
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'next/navigation';
 import { Layout } from '../components/Layout';
 import { Card } from '../components/ui/Card';
 import { Clock, CheckCircle, RefreshCw, FileText, Loader2, ArrowRight, Play, Square, Power } from 'lucide-react';
@@ -10,7 +10,7 @@ import { getPosts, startAgent, stopAgent, getAgentStatus } from '../lib/api';
 import { PLANS } from '../constants';
 
   const UserDashboard: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [jobs, setJobs] = useState<any[]>([]);
   const [user, setUser] = useState(getStoredUser());
   const [isSyncing, setIsSyncing] = useState(false);

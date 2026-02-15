@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Home, LayoutDashboard, Shield } from 'lucide-react';
 
-export const DevNavigation: React.FC = () => {
+  const DevNavigation: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -49,3 +49,4 @@ export const DevNavigation: React.FC = () => {
     </div>
   );
 };
+export default DevNavigation;

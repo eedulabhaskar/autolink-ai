@@ -1,4 +1,4 @@
-
+"use client";
 import React, { useState } from 'react';
 import { AdminLayout } from '../components/AdminLayout';
 import { Card } from '../components/ui/Card';

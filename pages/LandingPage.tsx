@@ -1,13 +1,13 @@
-
+"use client";
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'next/Navigation';
 import { Check, Bot, Zap, TrendingUp, Shield } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { PLANS } from '../constants';
 import { saveUser, getStoredUser } from '../lib/store';
 
   const LandingPage: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   useEffect(() => {
     // Intercept LinkedIn OAuth callback at root
